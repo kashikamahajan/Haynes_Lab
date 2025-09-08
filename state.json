@@ -1,0 +1,84 @@
+{
+  "dimensions": {
+    "x": [
+      4e-9,
+      "m"
+    ],
+    "y": [
+      4e-9,
+      "m"
+    ],
+    "z": [
+      4e-8,
+      "m"
+    ]
+  },
+  "position": [
+    187120.5,
+    206112.5,
+    20454.5
+  ],
+  "crossSectionScale": 8.166169912567627,
+  "projectionOrientation": [
+    -0.6719031929969788,
+    0.28804364800453186,
+    0.04353834688663483,
+    -0.6809415817260742
+  ],
+  "projectionScale": 31913.172250292286,
+  "layers": [
+    {
+      "type": "image",
+      "source": {
+        "url": "precomputed://https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/em",
+        "subsources": {
+          "default": true
+        },
+        "enableDefaultSubsources": false
+      },
+      "tab": "source",
+      "annotationColor": "#7d7d7d",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            86,
+            172
+          ]
+        }
+      },
+      "name": "img"
+    },
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://iarpa_microns/minnie/minnie65/seg_m1300",
+      "tab": "segments",
+      "annotationColor": "#949494",
+      "selectedAlpha": 0.46,
+      "notSelectedAlpha": 0.14,
+      "crossSectionRenderScale": 1.2030250360821166,
+      "segments": [
+        "!864691133190214690",
+        "!864691135327019406",
+        "!864691136194411734",
+        "!864691135082019575",
+        "!864691135809945036",
+        "864691136227302225"
+      ],
+      "colorSeed": 1416464799,
+      "name": "seg"
+    }
+  ],
+  "showAxisLines": false,
+  "showSlices": false,
+  "selectedLayer": {
+    "visible": true,
+    "layer": "seg"
+  },
+  "layout": {
+    "type": "3d",
+    "orthographicProjection": true
+  },
+  "layerListPanel": {
+    "visible": true
+  }
+}
